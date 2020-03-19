@@ -38,15 +38,12 @@ public class SecondFragment extends Fragment {
                 String admin = "admin";
                 String adminpw = "asdf1234";
 
-                if (id == admin && pw == adminpw){
+                if (id.equals(admin) && pw.equals(adminpw)){
                     Toast.makeText(getActivity(), "관리자 로그인", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     Toast.makeText(getActivity(), "잘못된 사용자 정보입니다.", Toast.LENGTH_SHORT).show();
                 }
-
-//                Toast.makeText(getActivity(), String.format("%s, %s", id, pw), Toast.LENGTH_SHORT).show();
-
             }
         });
 

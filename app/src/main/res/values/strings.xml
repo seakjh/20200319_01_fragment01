@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">20200319_01_fragment01</string>
+    <string name="app_name">프래그먼트</string>
+    <string name="id">아이디</string>
+    <string name="id_input_hint">아이디 입력</string>
+    <string name="password">비밀번호</string>
+    <string name="pw_input_hint">비밀번호 입력</string>
 </resources>
