@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#fff"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="10dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ID"/>
+            android:text="이름"/>
 
         <EditText
-            android:id="@+id/idEdt"
+            android:id="@+id/nameEdt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:singleLine="true"
-            android:hint="ID"
+            android:hint="이름 입력"
             android:layout_marginTop="5dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="PW"/>
+            android:text="전화번호"/>
 
         <EditText
-            android:id="@+id/pwEdt"
+            android:id="@+id/phoneEdt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="Password"
+            android:inputType="phone"
+            android:hint="폰번 입력"
             android:layout_marginTop="5dp"/>
 
         <Button
-            android:id="@+id/loginBtn"
+            android:id="@+id/infoToastBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="로그인"/>
+            android:text="정보 토스트 출력"/>
 
     </LinearLayout>
 </layout>

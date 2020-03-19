@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -31,6 +32,20 @@ public class SecondFragment extends Fragment {
         binding.loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String id = binding.idEdt.getText().toString();
+                String pw = binding.pwEdt.getText().toString();
+
+                String admin = "admin";
+                String adminpw = "asdf1234";
+
+                if (id == admin && pw == adminpw){
+                    Toast.makeText(getActivity(), "관리자 로그인", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Toast.makeText(getActivity(), "잘못된 사용자 정보입니다.", Toast.LENGTH_SHORT).show();
+                }
+
+//                Toast.makeText(getActivity(), String.format("%s, %s", id, pw), Toast.LENGTH_SHORT).show();
 
             }
         });

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/firstFragCallBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="첫 프래그먼트"/>
+
+            <Button
+                android:id="@+id/secondFragCallBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="둘째 프래그먼트"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/firstFragLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/firstFrag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.example.a20200319_01_fragment01.fragments.FirstFragment"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondFragLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/secondFrag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.example.a20200319_01_fragment01.fragments.SecondFragment"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>
